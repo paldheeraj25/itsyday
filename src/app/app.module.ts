@@ -37,6 +37,9 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { HomeModule } from './home/home.module';
 import { ProductsComponent } from './products/products.component';
+import { MyproductsComponent } from './myproducts/myproducts.component';
+import { LogoComponent } from './logo/logo.component';
+import { ShopComponent } from './shop/shop.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,10 @@ import { ProductsComponent } from './products/products.component';
     ProfileComponent,
     NavbarComponent,
     FooterComponent,
-    ProductsComponent
+    ProductsComponent,
+    MyproductsComponent,
+    LogoComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,

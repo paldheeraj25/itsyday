@@ -1,0 +1,174 @@
+<div class="container product-section">
+  <!-- <div class="alert alert-info" role="alert">
+    You dont have any product line. Please choose a product and create you product line.
+  </div> -->
+
+
+  <br>
+  <!-- create product line -->
+  <div>
+    <div class="row text-center">
+      <div class="col"></div>
+      <div class="col text-center">
+        <div class="form-group">
+          <label for="formGroupExampleInput">Type your logo name and select a style.</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="your logo name" [(ngModel)]="logoName">
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+    <div class="row text-center">
+      <div class="col"></div>
+      <div class="col text-center">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body text-center">
+            <h4 class='card-title' [ngClass]="{ 'Pacifico': logoClass == 'Pacifico', 'OleoScript': logoClass == 'OleoScript', 'LobsterTwo': logoClass == 'LobsterTwo', 'MeriendaOne': logoClass == 'MeriendaOne', 'JustAnotherHand': logoClass == 'JustAnotherHand', 'BerkshireSwash': logoClass == 'BerkshireSwash', 'Arizonia': logoClass == 'Arizonia', 'JustAnotherHand': logoClass == 'JustAnotherHand', 'Cookie': logoClass == 'Cookie', 'GreatVibes': logoClass == 'GreatVibes', 'LeckerliOne': logoClass == 'LeckerliOne', 'Srisakdi': logoClass == 'Srisakdi', 'GloriaHallelujah': logoClass == 'GloriaHallelujah'}">{{logoName}}</h4>
+            <a href="#" class="btn btn-primary">Select Logo</a>
+          </div>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col text-center">
+        <h6 role="alert">you can select one of the following
+          styles.</h6>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col text-center"><span class="Pacifico pointer" (click)="logoClass = 'Pacifico'">Pacifico</span></div>
+      <div class="col text-center"><span class="OleoScript pointer" (click)="logoClass = 'OleoScript'">Oleao Script</span></div>
+      <div class="col text-center"><span class="LobsterTwo pointer" (click)="logoClass = 'LobsterTwo'">Lobster Two</span></div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col text-center"><span class="BerkshireSwash pointer" (click)="logoClass = 'BerkshireSwash'">Berkshire
+          Swash</span></div>
+      <div class="col text-center"><span class="MeriendaOne pointer" (click)="logoClass = 'MeriendaOne'">Merienda Onet</span></div>
+      <div class="col text-center"><span class="JustAnotherHand pointer" (click)="logoClass = 'JustAnotherHand'">Just
+          Another Hand</span></div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col text-center"><span class="Arizonia pointer" (click)="logoClass = 'Arizonia'">Arizonia</span></div>
+      <div class="col text-center"><span class="Cookie pointer" (click)="logoClass = 'Cookie'">Cookie</span></div>
+      <div class="col text-center"><span class="GreatVibes pointer" (click)="logoClass = 'GreatVibes'">GreatVibes</span></div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col text-center"><span class="LeckerliOne pointer" (click)="logoClass = 'LeckerliOne'">Leckerli One</span></div>
+      <div class="col text-center"><span class="Srisakdi pointer" (click)="logoClass = 'Srisakdi'">Srisakdi</span></div>
+      <div class="col text-center"><span class="GloriaHallelujah pointer" (click)="logoClass = 'GloriaHallelujah'">Gloria
+          Hallelujah</span></div>
+    </div>
+    <br />
+
+    <!-- <div class="row text-center">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h4 class='card-title Pacifico'>{{logoName}}</h4>
+            <a href="#" class="btn btn-primary">Select Logo</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h4 class='card-title OleoScript'>{{logoName}}</h4>
+            <a href="#" class="btn btn-primary">Select Logo</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h4 class='card-title LobsterTwo'>{{logoName}}</h4>
+            <a href="#" class="btn btn-primary">Select Logo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row text-center">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h4 class='card-title BerkshireSwash'>{{logoName}}</h4>
+            <a href="#" class="btn btn-primary">Select Logo</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h4 class='card-title MeriendaOne'>{{logoName}}</h4>
+            <a href="#" class="btn btn-primary">Select Logo</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h4 class='card-title JustAnotherHand'>{{logoName}}</h4>
+            <a href="#" class="btn btn-primary">Select Logo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h4 class='card-title Arizonia'>{{logoName}}</h4>
+            <a href="#" class="btn btn-primary">Select Logo</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h4 class='card-title Cookie'>{{logoName}}</h4>
+            <a href="#" class="btn btn-primary">Select Logo</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h4 class='card-title GreatVibes'>{{logoName}}</h4>
+            <a href="#" class="btn btn-primary">Select Logo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h4 class='card-title LeckerliOne'>{{logoName}}</h4>
+            <a href="#" class="btn btn-primary">Select Logo</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h4 class='card-title Srisakdi'>{{logoName}}</h4>
+            <a href="#" class="btn btn-primary">Select Logo</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h4 class='card-title GloriaHallelujah'>{{logoName}}</h4>
+            <a href="#" class="btn btn-primary">Select Logo</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>

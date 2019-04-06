@@ -14,6 +14,6 @@ export class ProfileComponent implements OnInit {
   ngOnInit() { }
 
   navigate(path: string) {
-    this.router.navigate([{ outlets: { userinfo: 'info' } }]);
+    this.router.navigate([{ outlets: { userinfo: path } }]);
   }
 }

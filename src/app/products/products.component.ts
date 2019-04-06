@@ -9,7 +9,12 @@ export class ProductsComponent implements OnInit {
 
   constructor() { }
 
+  public productLine: string = 'beauty'
+
   ngOnInit() {
   }
 
+  serviceBox(productLine: string) {
+    this.productLine = productLine;
+  }
 }

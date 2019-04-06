@@ -1,0 +1,86 @@
+<div class="container product-detail">
+  <div class="card">
+    <div class="container-fliud">
+      <div class="wrapper row">
+        <div class="preview col-md-6">
+          <!-- <div><img src="https://firebasestorage.googleapis.com/v0/b/lakshmi-53afa.appspot.com/o/logo1.png?alt=media&token=4e6330bc-2985-40a0-a03d-a4f1dc9d3ebe" /></div> -->
+          <div class="preview-pic tab-content">
+            <div><img src="https://cdn.shopify.com/s/files/1/1133/5964/products/01-_0010_Powder-dark.jpg" /></div>
+          </div>
+          <ul class="preview-thumbnail nav nav-tabs">
+            <!-- <li *ngFor="let img of gallery"><a (click)=changeImage(img)> <img src={{img}} /></a></li> -->
+            <li><a (click)=changeImage(img)> <img src="https://cdn.shopify.com/s/files/1/1133/5964/products/01-_0010_Powder-dark.jpg" /></a></li>
+            <li><a (click)=changeImage(img)> <img src="https://cdn.shopify.com/s/files/1/1133/5964/products/2_Powders-Ecomm-Dark.jpg" /></a></li>
+            <li><a (click)=changeImage(img)> <img src="https://cdn.shopify.com/s/files/1/1133/5964/products/DARK_2_WS.jpg" /></a></li>
+          </ul>
+
+        </div>
+        <div class="details col-md-6">
+          <h3 class="product-title">Jeny Cosmetics</h3>
+          <div class="rating">
+            <div class="stars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <span class="review-no">190 reviews</span>
+          </div>
+          <div>
+            <button type="button" class="btn btn-success" (click)=goToPayment()>Buy Now</button>
+            <img class="img-responsive pull-right" src="https://firebasestorage.googleapis.com/v0/b/lakshmi-53afa.appspot.com/o/payment.png?alt=media&token=374c1a34-2484-465f-b8d4-1b288502246e">
+          </div>
+          <p class="product-description">All over loose powder that effortlessly sets your makeup, balances oils and
+            provides a natural, skin-like finish.</p>
+          <div class="row">
+            <div class="col-sm-3 text-right">
+              <h5>Qty</h5>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <input type="number" (change)="changePrice()" name="quantity" required [(ngModel)]='quantity' class="form-control"
+                  placeholder="1">
+              </div>
+            </div>
+          </div>
+          <h5>Regular Price: <span class="line-through">Rs. 600 /-</span>
+            40%
+            off
+          </h5>
+
+          <h4 class="price">current price:
+            <span>Rs. 400 /-</span>
+          </h4>
+          <span class="save-payment">(you save RS. 200)</span>
+          <h4>
+            <b>
+              Sale ending in:
+              <!-- <countdown [config]="{leftTime: 28000 * 100}">$!h!:$!m!:$!s!</countdown> -->
+            </b>
+          </h4>
+          <h6>Total: <span>Rs. {{totalPrice}}</span></h6>
+
+          <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(201 votes)</strong></p>
+          <div class="action">
+            <!-- <button type="button" class="btn btn-default">Add to Cart</button> -->
+            <button type="button" class="btn btn-success" (click)=goToPayment()>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h4>Our Guarentee</h4>
+  <div class="row">
+    <div class="col">
+      We’ll get your orders right. If your order isn’t 100% accurate, then we make it right. We will immediately issue
+      a call tag for the incorrect merchandise and quickly send out the right product to our customer.
+      We’ll ship your orders promptly. All orders that we receive are shipped within same business day after receipt.
+      If
+      an expedited order is in by 1:00 PM EST on a business day, it will ship the same day and can reach you on courier
+      parners terms for delivery.
+      We’ll respond promptly to your service requests and resolve them to your satisfaction, and we’ll follow-up to
+      make sure we’ve met your expectations.
+    </div>
+  </div>
+</div>

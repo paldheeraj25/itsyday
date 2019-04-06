@@ -10,7 +10,7 @@ const routes: Routes = [
     component: UserComponent,
     children: [
       {
-        path: "info",
+        path: "create",
         component: ProductsComponent,
         outlet: "userinfo"
       }

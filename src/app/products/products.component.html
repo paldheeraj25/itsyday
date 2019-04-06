@@ -1,11 +1,11 @@
 <div class="container product-section">
-  <div class="alert alert-info" role="alert">
+  <!-- <div class="alert alert-info" role="alert">
     You dont have any product line. Please choose a product and create you product line.
-  </div>
+  </div> -->
 
   <div class="d-flex justify-content-around">
     <div class="p-2">
-      <i (click)="serviceBox('cleaningPaint')" class="fa fa-paint-brush service-icon-size"></i>
+      <i (click)="serviceBox('beauty')" class="fa fa-paint-brush service-icon-size"></i>
       <br>
       <span style="display: block">Beauty & Makeup</span>
     </div>
@@ -30,10 +30,67 @@
       <span style="display: block">Wedding & Event</span>
     </div>
   </div>
-  <div class="row">
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
+  <br>
+  <!-- create product line -->
+  <div *ngIf="productLine === 'beauty'">
+    <div class="row text-center">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Base Makeup Kit</h5>
+            <p class="card-text">Basic beauty kit contains 6 basic shaed, 1 Bloss, 1 highlighter, 1 Blush</p>
+            <a href="#" class="btn btn-primary">Add product line</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Eye Kit</h5>
+            <p class="card-text">Basic beauty kit contains 6 basic shaed, 1 Bloss, 1 highlighter, 1 Blush</p>
+            <a href="#" class="btn btn-primary">Add product line</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Highlighter</h5>
+            <p class="card-text">Basic beauty kit contains 6 basic shaed, 1 Bloss, 1 highlighter, 1 Blush</p>
+            <a href="#" class="btn btn-primary">Add product line</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row text-center">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Blush / Bronzer</h5>
+            <p class="card-text">Basic beauty kit contains 6 basic shaed, 1 Bloss, 1 highlighter, 1 Blush</p>
+            <a href="#" class="btn btn-primary">Add product line</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <!-- <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Base Makeup Kit</h5>
+            <p class="card-text">Basic beauty kit contains 6 basic shaed, 1 Bloss, 1 highlighter, 1 Blush</p>
+            <a href="#" class="btn btn-primary">Add product line</a>
+          </div>
+        </div> -->
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">All in one</h5>
+            <p class="card-text">Basic beauty kit contains 6 basic shaed, 1 Bloss, 1 highlighter, 1 Blush</p>
+            <a href="#" class="btn btn-primary">Add product line</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
